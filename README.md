@@ -23,3 +23,12 @@ Google Cloud - Pub/Sub, Cloud Functions, Cloud Storage, DataProc, Crontab and Sp
 3. A spark serverless batch is created to run the Model Training and to save the trained model to cloud storage.
 2. Using the pre-trained model DataProc Schedules a CronJob with shell script that runs the Rating_Exatration.py file on new streamed data.
 
+## Collaborators
+
+| Names                  | Year   | Major         |
+| :---:                  | :---:  | :---:         |
+| Pooja Kangokar Pranesh | 2022   | Data Science  |
+| Elizabeth Cardosa      | 2022   | Data Science  |
+| Yun-Zih Chen           | 2022   | Data Science  |
+
+
