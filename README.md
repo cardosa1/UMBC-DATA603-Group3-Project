@@ -17,3 +17,9 @@ Google Cloud - Pub/Sub, Cloud Functions, Cloud Storage, DataProc, Crontab and Sp
 3. Step 3: Create a Cloud Function with the above Pub/Sub Topic as the Trigger.
 4. Step 4: Create a DataProc Cluster to schedule the Rating_Prediction Job.
 
+## Code Run
+
+1. Sentiment_Extraction Cloud Function is trigged automatically and dumps the new data with sentiment details to cloud storage.
+3. A spark serverless batch is created to run the Model Training and to save the trained model to cloud storage.
+2. Using the pre-trained model DataProc Schedules a CronJob with shell script that runs the Rating_Exatration.py file on new streamed data.
+
