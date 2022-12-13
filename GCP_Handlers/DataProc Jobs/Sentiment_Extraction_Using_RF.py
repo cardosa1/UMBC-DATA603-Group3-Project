@@ -38,4 +38,10 @@ test_pipelineModel = PipelineModel.load(working_folder+'Model_Train/pipeline_sav
 
 test_preds = test_pipelineModel.transform(new_data_spark)
 
-test_preds.show()
+# save predictions to gs cloud
+pandas_pred_df = test_preds.toPandas()
+pandas_pred_df.to_csv(working_folder+'predicted_data'+'/CF_Rating_prediction'+'_'+str(today)+'.csv')
+
+pandas_pred_df.head()
+
+print("Saved the predictions to gs")

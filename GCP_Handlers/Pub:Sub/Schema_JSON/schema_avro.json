@@ -1,0 +1,34 @@
+{
+  "type": "record",
+  "name": "Avro",
+  "fields": [
+    {
+      "name": "UniqueID",
+      "type": "int"
+    },
+    {
+      "name": "drugName",
+      "type": "string"
+    },
+    {
+      "name": "condition",
+      "type": "string"
+    },
+    {
+      "name": "review",
+      "type": "string"
+    },
+    {
+      "name": "rating",
+      "type": "double"
+    },
+    {
+      "name": "date",
+      "type": "string"
+    },
+    {
+      "name": "usefulCount",
+      "type": "int"
+    }
+  ]
+}
